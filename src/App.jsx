@@ -13,7 +13,7 @@ import we from "./we.gif";
 const tabs = [
   {
     id: 0,
-    title: "Кохав",
+    title: "Кохав test",
   },
   {
     id: 1,

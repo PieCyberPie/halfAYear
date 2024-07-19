@@ -3,6 +3,13 @@ import "./App.css";
 import Tab from "./components/Tab";
 import classNames from "classnames";
 
+import bow from "./bow.png";
+import cat1 from "./cat1.jpg";
+import cat2 from "./cat2.jpg";
+import cat3 from "./cat3.jpg";
+import flowers from "./flowers.jpg";
+import we from "./we.gif";
+
 const tabs = [
   {
     id: 0,
@@ -24,17 +31,17 @@ const tabs = [
   {
     id: 4,
     title: "Це про тебе!",
-    imgUrl: "src/cat1.jpg",
+    imgUrl: cat1,
   },
   {
     id: 5,
     title: "І знов про тебе!",
-    imgUrl: "src/cat2.jpg",
+    imgUrl: cat2,
   },
   {
     id: 6,
     title: "Не повіриш, знов про тебе!!!",
-    imgUrl: "src/cat3.jpg",
+    imgUrl: cat3,
   },
   {
     id: 7,
@@ -50,7 +57,7 @@ const tabs = [
   {
     id: 9,
     title: "Розумничка!!!!!",
-    imgUrl: "src/flowers.jpg",
+    imgUrl: flowers,
   },
   {
     id: 10,
@@ -75,7 +82,7 @@ const tabs = [
   {
     id: 14,
     title: "Чекаємо на Ваш відгук!",
-    imgUrl: "src/we.gif",
+    imgUrl: we,
     isReview: true,
   },
 ];
@@ -85,8 +92,8 @@ function App() {
 
   return (
     <Fragment>
-      <img src="src\bow.png" alt="asd" className="bow-image bow-image-1" />
-      <img src="src\bow.png" alt="asd" className="bow-image bow-image-2" />
+      <img src={bow} alt="" className="bow-image bow-image-1" />
+      <img src={bow} alt="" className="bow-image bow-image-2" />
       <div className="screen">
         <Tab tab={tabs[slideNum]} setSlideNum={setSlideNum} />
         <div className="buttons is-flex-direction-row is-justify-content-space-between is-flex-nowrap">
